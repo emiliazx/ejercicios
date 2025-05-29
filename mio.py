@@ -1,0 +1,28 @@
+sueldo = 50000
+ventas_mensuales = 100000
+
+# menu de opciones
+while True:
+    print("menu de opciones")
+    print("1. seleccionar para saber sueldo")
+    print("2. seleccionar para saber ventas_mensuales")
+    print("3. seleccionar para saber monto total de ambas")
+    print("4. seleccionar para salir")
+
+    opcion = input("ingrese la opcion: ")  # Guardamos la opción ingresada aquí
+
+    if opcion == '1':  # Comparamos con la cadena '1'
+       print(f"el sueldo original es: $ {sueldo}")
+
+    elif opcion == '2':  # Comparamos con la cadena '2'
+        print(f"las ventas_mensuales son: $ {ventas_mensuales}")
+
+    elif opcion == '3':  # Comparamos con la cadena '3'
+        total = sueldo + ventas_mensuales  # Calculamos el total directamente
+        print(f"el monto total de sueldo y ventas es: $ {total}")
+
+    elif opcion == '4':  # Comparamos con la cadena '4'
+        break  # Sale del bucle para terminar el programa
+
+    else:
+        print("Opción inválida. Por favor, elige una opción del menú (1-4).")
